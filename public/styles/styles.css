@@ -211,6 +211,9 @@ body {
 .gap-20 {
   gap: 20px; }
 
+.gap-30 {
+  gap: 30px; }
+
 .home .home-banner {
   background-image: url("../images/background-banner.png");
   background-size: cover;
