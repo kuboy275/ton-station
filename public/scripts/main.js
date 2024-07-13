@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(document).ready(function(){$(".home-project__list .item-show-more").slice(0,9).show(),$(".js-show-more").click(function(e){e.preventDefault(),$(".home-project__list .item-show-more:hidden").slice(0,9).fadeIn("slow"),$(".home-project__list .item-show-more:hidden").length<1&&$(this).attr("disabled","disabled")})});
