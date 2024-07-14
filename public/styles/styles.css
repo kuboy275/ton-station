@@ -167,10 +167,15 @@ header .navbar {
       padding: 12px 16px;
       color: var(--black-color); }
       header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-link:focus {
-        background: var(--gray-50); }
+        background: var(--gray-50);
+        color: var(--blue-color); }
       header .navbar-nav .nav-item .nav-link.select-wallet {
         background: var(--blue-color);
-        color: #fff; }
+        color: #fff;
+        border: 1px solid var(--blue-color); }
+        header .navbar-nav .nav-item .nav-link.select-wallet:hover {
+          background: var(--white);
+          color: var(--blue-color); }
   header .navbar-toggler {
     width: 40px;
     height: 40px;
@@ -268,6 +273,31 @@ body {
         border: none;
         background: #fff;
         color: var(--black-color); }
+  .home .home-banner-img img {
+    -webkit-animation: up-down 3s infinite ease;
+    animation: up-down 3s infinite ease; }
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(0) rotateZ(0deg);
+    transform: translateY(0) rotateZ(0deg); }
+  50% {
+    -webkit-transform: translateY(20px) rotateZ(-5deg);
+    transform: translateY(20px) rotateZ(-5deg); }
+  100% {
+    -webkit-transform: translateY(0) rotateZ(0deg);
+    transform: translateY(0) rotateZ(0deg); } }
+
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(0) rotateZ(0deg);
+    transform: translateY(0) rotateZ(0deg); }
+  50% {
+    -webkit-transform: translateY(20px) rotateZ(-5deg);
+    transform: translateY(20px) rotateZ(-5deg); }
+  100% {
+    -webkit-transform: translateY(0) rotateZ(0deg);
+    transform: translateY(0) rotateZ(0deg); } }
 
 .home .home-project {
   margin-block: 50px; }
@@ -305,7 +335,7 @@ body {
       font-weight: 400;
       line-height: 16px;
       color: var(--gray-color);
-      padding-block: 5px; }
+      padding-block: 8px; }
       .home .home-project__top .filter .dropdown-item.success {
         color: var(--green-color); }
       .home .home-project__top .filter .dropdown-item.error {
@@ -352,6 +382,9 @@ body {
             font-weight: 600;
             color: var(--black-color);
             text-decoration: none; }
+            .home .home-project__list .project-item__header .content-header__title a:hover {
+              color: var(--blue-color);
+              text-decoration: underline; }
           .home .home-project__list .project-item__header .content-header__title span.status {
             padding: 4px 8px;
             border-radius: 4px;
@@ -405,17 +438,40 @@ body {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      gap: 5px; }
+      gap: 5px;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
       .home .home-project__list .project-item__footer .select-item .dropdown-toggle i {
         font-size: 18px; }
-      .home .home-project__list .project-item__footer .select-item .dropdown-toggle[aria-expanded="true"] i.fa-caret-down {
-        -webkit-transform: rotate(-180deg);
-        transform: rotate(-180deg); }
-      .home .home-project__list .project-item__footer .select-item .dropdown-toggle:hover, .home .home-project__list .project-item__footer .select-item .dropdown-toggle:focus, .home .home-project__list .project-item__footer .select-item .dropdown-toggle:active {
+      .home .home-project__list .project-item__footer .select-item .dropdown-toggle[aria-expanded="true"] {
+        color: var(--blue-color); }
+        .home .home-project__list .project-item__footer .select-item .dropdown-toggle[aria-expanded="true"] i.fa-caret-down {
+          -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg); }
+      .home .home-project__list .project-item__footer .select-item .dropdown-toggle:hover {
         -webkit-box-shadow: none;
-        box-shadow: none; }
+        box-shadow: none;
+        color: var(--blue-color); }
       .home .home-project__list .project-item__footer .select-item .dropdown-toggle::after {
         display: none; }
+    .home .home-project__list .project-item__footer .select-item .dropdown-menu {
+      padding-inline: 10px; }
+    .home .home-project__list .project-item__footer .select-item .dropdown-item {
+      padding: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 8px;
+      color: var(--black-color); }
+      .home .home-project__list .project-item__footer .select-item .dropdown-item:hover {
+        color: var(--blue-color); }
+      .home .home-project__list .project-item__footer .select-item .dropdown-item img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%; }
     .home .home-project__list .project-item__footer a {
       color: var(--blue-color);
       font-size: 14px;
@@ -425,9 +481,14 @@ body {
   .home .home-project__showmore .btn {
     background: var(--blue-color);
     color: #fff; }
+    .home .home-project__showmore .btn:hover {
+      color: var(--blue-color);
+      background: var(--white);
+      border-color: var(--blue-color); }
     .home .home-project__showmore .btn:disabled {
       background: var(--gray-100);
-      color: var(--black-color); }
+      color: var(--black-color);
+      border-color: var(--gray-100); }
 
 .home .home-submit-project {
   position: fixed;
@@ -444,6 +505,13 @@ body {
     padding: 12px 16px;
     background: var(--blue-color);
     color: var(--gray-100); }
+    .home .home-submit-project .btn:hover {
+      color: var(--blue-color);
+      background: var(--white);
+      border-color: var(--blue-color); }
+      .home .home-submit-project .btn:hover img {
+        -webkit-filter: brightness(0) saturate(100%) invert(52%) sepia(86%) saturate(1054%) hue-rotate(172deg) brightness(95%) contrast(98%);
+        filter: brightness(0) saturate(100%) invert(52%) sepia(86%) saturate(1054%) hue-rotate(172deg) brightness(95%) contrast(98%); }
 
 #projectItemModal .modal-dialog {
   max-width: 600px;
@@ -462,6 +530,8 @@ body {
   width: 20px;
   height: 20px;
   font-size: 20px; }
+  #projectItemModal .modal-content .close:hover {
+    color: var(--blue-color); }
 
 #projectItemModal .modal-content .item-title {
   color: var(--blue-color);
@@ -519,6 +589,9 @@ body {
     font-size: 30px;
     color: var(--black-color);
     text-decoration: none; }
+    #projectItemModal .modal-content .content-header__socials .link-item:hover {
+      background: var(--blue-color);
+      color: var(--white); }
 
 #projectItemModal .modal-content .content-header__desc {
   margin-block: 15px; }
