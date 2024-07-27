@@ -15,15 +15,20 @@
     <div class="wrapper">
       <header> 
         <div class="container-fluid"> 
-          <nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="./index.html"><img src="./images/logo.png" alt="Logo" width="160"></a>
+          <nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="./index.html"><img src="./images/logo.png" alt="Logo" width="100"></a>
             <button class="navbar-toggler btn p-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
+                <li class="nav-item dot d-none d-lg-flex"><span></span></li>
                 <li class="nav-item"><a class="nav-link" href="#">Docs </a></li>
+                <li class="nav-item dot d-none d-lg-flex"><span></span></li>
                 <li class="nav-item"><a class="nav-link" href="#">Twitter</a></li>
+                <li class="nav-item dot d-none d-lg-flex"><span></span></li>
                 <li class="nav-item"><a class="nav-link" href="#">Telegram</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Submit Project</a></li>
-                <li class="nav-item"><a class="nav-link select-wallet" href="#">Select wallet</a></li>
+                <li class="nav-item dot d-none d-lg-flex"><span></span></li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link select-wallet" href="#"><img src="./images/zap-fast.png" width="24">TRY IT NOW</a></li>
               </ul>
             </div>
           </nav>
@@ -35,15 +40,15 @@
             <div class="row justify-content-between align-items-center">
               <div class="col-12 col-xl-5">
                 <div class="home-banner__content"> 
-                  <h3>The list token</h3>
-                  <h1>Launchpad |</h1>
+                  <h3>THE LIST TOKEN</h3>
+                  <h1>LAUNCHPAD</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl felis. Quisque euismod dolor ut ante placerat tincidunt. Sed quis lacinia leo.</p>
                   <form class="home-banner__search"> 
                     <div class="input-group">
-                      <input class="form-control" type="text" placeholder="Search Project">
                       <div class="input-group-append">
                         <button class="input-group-text" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                       </div>
+                      <input class="form-control" type="text" placeholder="Search Project">
                     </div>
                   </form>
                 </div>
@@ -54,14 +59,20 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid"> 
+        <div class="container-fluid main-background"> 
           <div class="home-project"> 
             <div class="home-project__top"> 
               <div class="d-flex justify-content-between align-items-center flex-wrap gap-10">
-                <div class="title"> <span>Explore </span>new project</div>
+                <div class="title">EXPLORE NEW PROJECT</div>
                 <div class="filter">
+                  <div class="input-group">
+                    <div class="input-group-append">
+                      <button class="input-group-text" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <input class="form-control" type="text" placeholder="SEARCH">
+                  </div>
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-filter"></i>Filter<i class="fa-solid fa-caret-down"></i></button>
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-filter"></i></button>
                     <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item success" href="#!">Complete</a><a class="dropdown-item error" href="#!">End</a><a class="dropdown-item warning" href="#!">Comming</a><a class="dropdown-item all" href="#!">All</a></div>
                   </div>
                 </div>
@@ -71,10 +82,11 @@
               <div class="row"> 
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -85,7 +97,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -94,10 +106,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status error">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status error">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -108,7 +121,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -117,10 +130,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -131,7 +145,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -140,10 +154,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -154,7 +169,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -163,10 +178,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status warning">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -177,7 +193,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -186,10 +202,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -200,7 +217,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -209,10 +226,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status warning">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -223,7 +241,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -232,10 +250,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -246,7 +265,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -255,10 +274,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -269,7 +289,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -278,10 +298,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status error">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status error">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -292,7 +313,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -301,10 +322,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -315,7 +337,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -324,10 +346,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -338,7 +361,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -347,10 +370,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -361,7 +385,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -370,10 +394,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -384,7 +409,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -393,10 +418,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status warning">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -407,7 +433,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -416,10 +442,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -430,7 +457,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -439,10 +466,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -453,7 +481,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -462,10 +490,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status error">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status error">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -476,7 +505,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -485,10 +514,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -499,7 +529,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -508,10 +538,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -522,7 +553,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -531,10 +562,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -545,7 +577,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -554,10 +586,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -568,7 +601,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -577,10 +610,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -591,7 +625,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -600,10 +634,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -614,7 +649,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -623,10 +658,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -637,7 +673,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -646,10 +682,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -660,7 +697,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -669,10 +706,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -683,7 +721,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -692,10 +730,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status error">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status error">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -706,7 +745,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -715,10 +754,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -729,7 +769,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -738,10 +778,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -752,7 +793,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -761,10 +802,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -775,7 +817,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -784,10 +826,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -798,7 +841,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -807,10 +850,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -821,7 +865,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -830,10 +874,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -844,7 +889,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -853,10 +898,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -867,7 +913,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -876,10 +922,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -890,7 +937,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -899,10 +946,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -913,7 +961,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -922,10 +970,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -936,7 +985,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -945,10 +994,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -959,7 +1009,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -968,10 +1018,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 item-show-more"> 
                   <div class="project-item">
-                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="56px"/>
+                    <div class="project-item__header d-flex align-items-center"><img class="logo" src="./images/item-logo.png" alt="" with="120"/>
                       <div class="content-header"> 
-                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a><span class="status success">Complete</span></div>
-                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
+                        <div class="content-header__title"> <a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">Feedback </a></div>
+                        <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                        <div class="content-header__status success">Complete</div>
                       </div>
                     </div>
                     <div class="project-item__content"> 
@@ -982,7 +1033,7 @@
                         <div class="select-item">
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Marketing by<i class="fa-solid fa-caret-down"></i></button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!">All</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"><img src="./images/meme-icon.png" alt="coin"/>Meme 999</a><a class="dropdown-item" href="#!"> <i class="fa-solid fa-circle-plus"></i>Add more</a></div>
                           </div>
                         </div><a href="#!" type="button" data-toggle="modal" data-target="#projectItemModal">View Details <i class="fa-solid fa-arrow-right"></i></a>
                       </div>
@@ -1001,21 +1052,77 @@
                           <div class="content-header__title"> 
                             <p>Feedback </p>
                           </div>
+                          <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-circle-check"></i>Safu </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Audit </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>KYC </span><span class="primary"> <i class="fa-regular fa-circle-check"></i>Doxx </span></div>
+                          <div class="content-header__status"> 
+                            <div class="status-info">
+                              <h6 class="status-title">Status Project</h6><span class="status">Live</span>
+                            </div>
+                            <div class="content-header__socials d-flex align-items-center gap-10"> <a class="link-item" href="#!"><i class="fa-brands fa-x-twitter"></i></a><a class="link-item" href="#!"><i class="fa-brands fa-telegram"></i></a><a class="link-item" href="#!"><i class="fa-solid fa-globe"></i></a></div>
+                          </div>
                         </div>
                       </div>
-                      <div class="content-header__tag d-flex align-items-center"> <span class="primary"> <i class="fa-regular fa-star"></i>Audit </span><span class="success"> <i class="fa-regular fa-star"></i>Audit </span><span class="warning"> <i class="fa-regular fa-star"></i>Audit </span><span class="error"> <i class="fa-regular fa-star"></i>Audit </span></div>
-                      <div class="content-header__socials d-flex align-items-center gap-10"> <a class="link-item" href="#!"><i class="fa-brands fa-x-twitter"></i></a><a class="link-item" href="#!"><i class="fa-brands fa-telegram"></i></a><a class="link-item" href="#!"><i class="fa-solid fa-globe"></i></a></div>
-                      <div class="content-header__desc"> 
-                        <h3 class="item-title">Desciption:</h3>
-                        <p>Lorem ipsump Lorem ipsump Lorem ipsump</p>
-                      </div>
-                      <div class="content-header__status"> 
-                        <h3 class="item-title">Status Project:</h3>
-                        <div class="status success">Complete</div>
-                      </div>
-                      <div class="content-header__total d-flex align-items-center gap-10"> 
-                        <h3 class="item-title">Total raised:</h3>
-                        <p class="total-result">6655 SOL</p>
+                      <div class="project-item__main">
+                        <div class="desc"> 
+                          <h3 class="item-title">Desciption:</h3>
+                          <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nisl felis. Quisque euismod dolor ut ante placerat tincidunt. Sed quis lacinia leo.</p>
+                        </div>
+                        <div class="liquid"> 
+                          <div class="liquid-item"> 
+                            <h6 class="title">Hardcap</h6>
+                            <h5 class="value">55M</h5>
+                          </div>
+                          <div class="liquid-item"> 
+                            <h6 class="title">Raised</h6>
+                            <h5 class="value">554</h5>
+                          </div>
+                        </div>
+                        <div class="time"> 
+                          <div class="time-item"> 
+                            <div class="value">01</div>
+                            <div class="label">Hours</div>
+                          </div>
+                          <div class="time-item-dot">:</div>
+                          <div class="time-item"> 
+                            <div class="value">15</div>
+                            <div class="label">Minutes</div>
+                          </div>
+                          <div class="time-item-dot">:</div>
+                          <div class="time-item"> 
+                            <div class="value">50</div>
+                            <div class="label">Seconds</div>
+                          </div>
+                        </div>
+                        <div class="white-list">
+                          <div class="white-list-title">
+                            <p class="title">Whitelists</p><span class="value"> <i class="fa-solid fa-bars"></i>30</span>
+                          </div>
+                          <div class="white-list-search"> 
+                            <div class="input-group">
+                              <div class="input-group-append">
+                                <button class="input-group-text" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                              </div>
+                              <input class="form-control" type="text" placeholder="SEARCH"/>
+                            </div>
+                            <div class="list-search-results"> 
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                              <p class="item"> <i class="fa-regular fa-copy"></i>HJKASDFHDAKJFHJ...DKJSN</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="solona-total"><img src="./images/solona-logo.png" width="32"/><span class="value">4123</span></div>
+                        <div class="btn btn-buy-now"><img src="./images/zap-fast.png" width="24"/>BUY NOW</div>
                       </div>
                     </div>
                   </div>
@@ -1023,19 +1130,34 @@
               </div>
             </div>
             <div class="home-project__showmore mt-5 text-center"> 
-              <button class="btn js-show-more"> Show more</button>
+              <button class="btn js-show-more">LOAD MORE</button>
             </div>
           </div>
-          <div class="home-submit-project"><a class="btn" href="#!"> <img src="./images/check-icon.png" alt="">Submit Project</a></div>
         </div>
       </div>
       <footer class="footer"> 
         <div class="container-fluid"> 
-          <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row gap-20">
-            <div class="footer-copyright"> 
-              <p>© 2077 Untitled UI. All rights reserved.</p>
+          <div class="row"> 
+            <div class="col-12 col-lg-6">
+              <div class="footer-item footer-left">
+                <div class="footer-left-nav"> <a href="#">Features </a><a href="#">Pricing</a><a href="#">FAQ</a><a href="#">Download</a></div>
+                <div class="footer-left-policy"> 
+                  <p class="copyright">© Copyright UI8, LLC.</p>
+                  <div class="policy-nav"> <a href="#">Privacy policy </a><a href="#">Terms of service </a></div>
+                </div>
+              </div>
             </div>
-            <div class="footer-socials d-flex align-items-center"> <a href="#!"> <i class="fa-brands fa-facebook"></i></a><a href="#!"> <i class="fa-brands fa-youtube"></i></a><a href="#!"> <i class="fa-brands fa-tiktok"></i></a></div>
+            <div class="col-12 col-lg-6">
+              <div class="footer-item footer-right">
+                <div class="footer-right-title"> 
+                  <h3>Subscribe</h3>
+                  <p>Sign up to our newsletter for feature updates and our undying love.</p>
+                </div>
+                <div class="footer-right-submit"> <a href="#">
+                     Submit Project<i class="fa-solid fa-caret-right"></i></a></div>
+                <div class="footer-right-socials"> <a class="link-item" href="#!"><i class="fa-brands fa-x-twitter"></i></a><a class="link-item" href="#!"><i class="fa-brands fa-telegram"></i></a><a class="link-item" href="#!"><i class="fa-solid fa-globe"></i></a><a class="link-item" href="#!"><i class="fa-brands fa-discord"></i></a></div>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
