@@ -578,6 +578,7 @@ body {
       display: block;
       padding: 5px;
       width: 100px;
+      border-radius: 4px;
       background: #999EE01A;
       border: 2px solid #999EE01A; }
       @media only screen and (max-width: 575px) {
@@ -788,7 +789,8 @@ body {
     #projectItemModal .modal-content .close:hover {
       color: var(--yellow-color); }
   #projectItemModal .modal-content .project-item__header .logo {
-    width: 120px; }
+    width: 120px;
+    border-radius: 4px; }
     @media only screen and (max-width: 575px) {
       #projectItemModal .modal-content .project-item__header .logo {
         width: 100px; } }
