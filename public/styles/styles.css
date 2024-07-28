@@ -151,7 +151,9 @@ table {
   --yellow-50: #E185281A;
   --white-color: #E7E7F7;
   --secondary-color: #999EE04D;
-  --purple-color: #999EE0; }
+  --purple-color: #999EE0;
+  --warning-color: #E18528;
+  --warning-50: #E185281A; }
 
 html {
   font-family: "Poppins", sans-serif; }
@@ -626,16 +628,20 @@ body {
           border: 2px solid #999EE01A; }
           .home .home-project__list .project-item__header .content-header__tag span.primary {
             color: var(--purple-color);
-            background: #999EE01A; }
+            background: #999EE01A;
+            border: 1px solid #999EE01A; }
           .home .home-project__list .project-item__header .content-header__tag span.success {
             color: var(--green-color);
-            background: var(--green-50); }
+            background: var(--green-50);
+            border: 1px solid var(--green-50); }
           .home .home-project__list .project-item__header .content-header__tag span.warning {
-            color: var(--yellow-color);
-            background: var(--yellow-50); }
+            color: var(--warning-color);
+            background: var(--warning-50);
+            border: 1px solid var(--warning-50); }
           .home .home-project__list .project-item__header .content-header__tag span.error {
             color: var(--red-color);
-            background: var(--red-50); }
+            background: var(--red-50);
+            border: 1px solid var(--red-50); }
       .home .home-project__list .project-item__header .content-header__status {
         padding: 4px 8px;
         border-radius: 4px;
@@ -646,16 +652,20 @@ body {
         margin-top: 15px; }
         .home .home-project__list .project-item__header .content-header__status.primary {
           color: var(--purple-color);
-          background: #999EE01A; }
+          background: #999EE01A;
+          border: 1px solid #999EE01A; }
         .home .home-project__list .project-item__header .content-header__status.success {
           color: var(--green-color);
-          background: var(--green-50); }
+          background: var(--green-50);
+          border: 1px solid var(--green-50); }
         .home .home-project__list .project-item__header .content-header__status.warning {
-          color: var(--yellow-color);
-          background: var(--yellow-50); }
+          color: var(--warning-color);
+          background: var(--warning-50);
+          border: 1px solid var(--warning-50); }
         .home .home-project__list .project-item__header .content-header__status.error {
           color: var(--red-color);
-          background: var(--red-50); }
+          background: var(--red-50);
+          border: 1px solid var(--red-50); }
   .home .home-project__list .project-item__content {
     margin-block: 15px; }
     .home .home-project__list .project-item__content p {
@@ -758,16 +768,16 @@ body {
         -webkit-filter: brightness(0) saturate(100%) invert(52%) sepia(86%) saturate(1054%) hue-rotate(172deg) brightness(95%) contrast(98%);
         filter: brightness(0) saturate(100%) invert(52%) sepia(86%) saturate(1054%) hue-rotate(172deg) brightness(95%) contrast(98%); }
 
-#projectItemModal .modal-dialog {
+.project-item-modal-wrapper .modal-dialog {
   max-width: 600px;
   width: 100%; }
   @media only screen and (max-width: 1200px) {
-    #projectItemModal .modal-dialog {
+    .project-item-modal-wrapper .modal-dialog {
       margin-top: 40px; } }
 
-#projectItemModal .modal-content {
+.project-item-modal-wrapper .modal-content {
   background: var(--black-color); }
-  #projectItemModal .modal-content .close {
+  .project-item-modal-wrapper .modal-content .close {
     all: unset;
     position: absolute;
     top: 20px;
@@ -786,23 +796,23 @@ body {
     padding: 5px;
     background: #999EE01A;
     border: 2px solid #999EE01A; }
-    #projectItemModal .modal-content .close:hover {
+    .project-item-modal-wrapper .modal-content .close:hover {
       color: var(--yellow-color); }
-  #projectItemModal .modal-content .project-item__header .logo {
+  .project-item-modal-wrapper .modal-content .project-item__header .logo {
     width: 120px;
     border-radius: 4px; }
     @media only screen and (max-width: 575px) {
-      #projectItemModal .modal-content .project-item__header .logo {
+      .project-item-modal-wrapper .modal-content .project-item__header .logo {
         width: 100px; } }
-  #projectItemModal .modal-content .content-header__title {
+  .project-item-modal-wrapper .modal-content .content-header__title {
     margin: 0;
     font-size: 24px;
     font-weight: 600;
     color: var(--white-color); }
-  #projectItemModal .modal-content .content-header__tag {
+  .project-item-modal-wrapper .modal-content .content-header__tag {
     margin-block: 15px;
     gap: 5px; }
-    #projectItemModal .modal-content .content-header__tag span {
+    .project-item-modal-wrapper .modal-content .content-header__tag span {
       border-radius: 4px;
       padding: 5px 8px;
       font-size: 12px;
@@ -813,20 +823,25 @@ body {
       -ms-flex-align: center;
       align-items: center;
       gap: 3px; }
-      #projectItemModal .modal-content .content-header__tag span.primary {
+      .project-item-modal-wrapper .modal-content .content-header__tag span.primary {
         color: var(--purple-color);
-        background: #999EE01A; }
-      #projectItemModal .modal-content .content-header__tag span.success {
+        background: #999EE01A;
+        border: 1px solid #999EE01A; }
+      .project-item-modal-wrapper .modal-content .content-header__tag span.success {
         color: var(--green-color);
-        background: var(--green-50); }
-      #projectItemModal .modal-content .content-header__tag span.warning {
-        color: var(--yellow-color);
-        background: var(--yellow-50); }
-      #projectItemModal .modal-content .content-header__tag span.error {
+        background: var(--green-50);
+        border: 1px solid var(--green-50); }
+      .project-item-modal-wrapper .modal-content .content-header__tag span.warning {
+        color: var(--warning-color);
+        background: var(--warning-50);
+        border: 1px solid var(--warning-50); }
+      .project-item-modal-wrapper .modal-content .content-header__tag span.error {
         color: var(--red-color);
-        background: var(--red-50); }
-  #projectItemModal .modal-content .content-header__status {
+        background: var(--red-50);
+        border: 1px solid var(--red-50); }
+  .project-item-modal-wrapper .modal-content .content-header__status {
     all: unset;
+    width: auto !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -836,20 +851,36 @@ body {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: end; }
-    #projectItemModal .modal-content .content-header__status .status-info .status-title {
+    .project-item-modal-wrapper .modal-content .content-header__status .status-info .status-title {
       font-size: 12px;
       font-weight: 600;
       color: var(--white-color);
       margin-bottom: 5px; }
-    #projectItemModal .modal-content .content-header__status .status-info span.status {
+    .project-item-modal-wrapper .modal-content .content-header__status .status-info span.status {
       display: block;
-      padding: 4px 20px;
+      padding: 5px 20px;
       background-color: var(--green-50);
       color: var(--green-color);
       border-radius: 4px;
       width: 100px;
       text-align: center; }
-  #projectItemModal .modal-content .content-header__socials .link-item {
+      .project-item-modal-wrapper .modal-content .content-header__status .status-info span.status.primary {
+        color: var(--purple-color);
+        background: #999EE01A;
+        border: 1px solid #999EE01A; }
+      .project-item-modal-wrapper .modal-content .content-header__status .status-info span.status.success {
+        color: var(--green-color);
+        background: var(--green-50);
+        border: 1px solid var(--green-50); }
+      .project-item-modal-wrapper .modal-content .content-header__status .status-info span.status.warning {
+        color: var(--warning-color);
+        background: var(--warning-50);
+        border: 1px solid var(--warning-50); }
+      .project-item-modal-wrapper .modal-content .content-header__status .status-info span.status.error {
+        color: var(--red-color);
+        background: var(--red-50);
+        border: 1px solid var(--red-50); }
+  .project-item-modal-wrapper .modal-content .content-header__socials .link-item {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -867,20 +898,20 @@ body {
     text-decoration: none;
     background: #999EE01A;
     border: 2px solid #999EE01A; }
-    #projectItemModal .modal-content .content-header__socials .link-item:hover {
+    .project-item-modal-wrapper .modal-content .content-header__socials .link-item:hover {
       color: var(--yellow-color); }
-  #projectItemModal .modal-content .project-item__main .desc {
+  .project-item-modal-wrapper .modal-content .project-item__main .desc {
     margin-block: 15px; }
-    #projectItemModal .modal-content .project-item__main .desc .item-title {
+    .project-item-modal-wrapper .modal-content .project-item__main .desc .item-title {
       font-size: 18px;
       font-weight: 600;
       color: var(--white-color);
       margin-bottom: 10px; }
-    #projectItemModal .modal-content .project-item__main .desc p {
+    .project-item-modal-wrapper .modal-content .project-item__main .desc p {
       font-size: 12px;
       line-height: 1.2;
       color: var(--purple-color); }
-  #projectItemModal .modal-content .project-item__main .liquid {
+  .project-item-modal-wrapper .modal-content .project-item__main .liquid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -891,7 +922,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     gap: 10px; }
-    #projectItemModal .modal-content .project-item__main .liquid-item {
+    .project-item-modal-wrapper .modal-content .project-item__main .liquid-item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -904,15 +935,19 @@ body {
       border-radius: 4px;
       background: #999EE01A;
       border: 2px solid #999EE01A; }
-      #projectItemModal .modal-content .project-item__main .liquid-item .title {
+      .project-item-modal-wrapper .modal-content .project-item__main .liquid-item-coming {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+      .project-item-modal-wrapper .modal-content .project-item__main .liquid-item .title {
         font-size: 14px;
         font-weight: 600;
         color: var(--white-color); }
-      #projectItemModal .modal-content .project-item__main .liquid-item .value {
+      .project-item-modal-wrapper .modal-content .project-item__main .liquid-item .value {
         font-size: 18px;
         font-weight: 600;
         color: var(--yellow-color); }
-  #projectItemModal .modal-content .project-item__main .time {
+  .project-item-modal-wrapper .modal-content .project-item__main .time {
     margin-block: 20px;
     padding: 15px;
     display: -webkit-box;
@@ -926,16 +961,16 @@ body {
     border-radius: 4px;
     background: #999EE01A;
     border: 2px solid #999EE01A; }
-    #projectItemModal .modal-content .project-item__main .time-icon {
+    .project-item-modal-wrapper .modal-content .project-item__main .time-icon {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%); }
-      #projectItemModal .modal-content .project-item__main .time-icon-left {
+      .project-item-modal-wrapper .modal-content .project-item__main .time-icon-left {
         left: 0; }
-      #projectItemModal .modal-content .project-item__main .time-icon-right {
+      .project-item-modal-wrapper .modal-content .project-item__main .time-icon-right {
         right: 0; }
-    #projectItemModal .modal-content .project-item__main .time .time-item-dot {
+    .project-item-modal-wrapper .modal-content .project-item__main .time .time-item-dot {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -945,7 +980,7 @@ body {
       color: var(--white-color);
       font-size: 16px;
       font-weight: 600; }
-    #projectItemModal .modal-content .project-item__main .time-item {
+    .project-item-modal-wrapper .modal-content .project-item__main .time-item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -957,15 +992,15 @@ body {
       -ms-flex-align: center;
       align-items: center;
       gap: 5px; }
-      #projectItemModal .modal-content .project-item__main .time-item .value {
+      .project-item-modal-wrapper .modal-content .project-item__main .time-item .value {
         font-weight: 600;
         font-size: 18px;
         color: var(--yellow-color); }
-      #projectItemModal .modal-content .project-item__main .time-item .label {
+      .project-item-modal-wrapper .modal-content .project-item__main .time-item .label {
         color: var(--white-color);
         font-size: 14px;
         font-weight: 600; }
-  #projectItemModal .modal-content .project-item__main .white-list-title {
+  .project-item-modal-wrapper .modal-content .project-item__main .white-list-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -979,11 +1014,11 @@ body {
     flex-wrap: wrap;
     gap: 5px;
     margin-bottom: 10px; }
-    #projectItemModal .modal-content .project-item__main .white-list-title p {
+    .project-item-modal-wrapper .modal-content .project-item__main .white-list-title p {
       color: var(--white-color);
       font-size: 14px;
       font-weight: 600; }
-    #projectItemModal .modal-content .project-item__main .white-list-title span {
+    .project-item-modal-wrapper .modal-content .project-item__main .white-list-title span {
       background: #999EE01A;
       border: 2px solid #999EE01A;
       color: var(--white-color);
@@ -998,13 +1033,13 @@ body {
       -ms-flex-align: center;
       align-items: center;
       gap: 5px; }
-  #projectItemModal .modal-content .project-item__main .white-list-search .input-group {
+  .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group {
     background: #999EE01A;
     border: 2px solid #999EE01A;
     padding: 5px 10px;
     margin-bottom: 15px;
     border-radius: 4px; }
-    #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control {
+    .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control {
       background: none;
       border: none;
       -webkit-box-shadow: none;
@@ -1014,27 +1049,27 @@ body {
       font-weight: 600;
       color: var(--white-color);
       text-align: right; }
-      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control::-webkit-input-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control::-webkit-input-placeholder {
         color: var(--white-color); }
-      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control::-moz-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control::-moz-placeholder {
         color: var(--white-color); }
-      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control::-ms-input-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control::-ms-input-placeholder {
         color: var(--white-color); }
-      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control::placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control::placeholder {
         color: var(--white-color); }
-      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-webkit-input-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-webkit-input-placeholder {
         color: transparent; }
-      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-moz-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-moz-placeholder {
         color: transparent; }
-      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-ms-input-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-ms-input-placeholder {
         color: transparent; }
-      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control:focus::placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group .form-control:focus::placeholder {
         color: transparent; }
-    #projectItemModal .modal-content .project-item__main .white-list-search .input-group-text {
+    .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .input-group-text {
       border: none;
       background: inherit;
       color: var(--white-color); }
-  #projectItemModal .modal-content .project-item__main .white-list-search .list-search-results {
+  .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .list-search-results {
     height: 120px;
     max-height: 200px;
     margin-bottom: 20px;
@@ -1042,22 +1077,22 @@ body {
     /* width */
     /* Track */
     /* Handle */ }
-    #projectItemModal .modal-content .project-item__main .white-list-search .list-search-results::-webkit-scrollbar {
+    .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .list-search-results::-webkit-scrollbar {
       width: 4px; }
-    #projectItemModal .modal-content .project-item__main .white-list-search .list-search-results::-webkit-scrollbar-track {
+    .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .list-search-results::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 4px var(--secondary-color);
       box-shadow: inset 0 0 4px var(--secondary-color); }
-    #projectItemModal .modal-content .project-item__main .white-list-search .list-search-results::-webkit-scrollbar-thumb {
+    .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .list-search-results::-webkit-scrollbar-thumb {
       background: var(--yellow-color); }
-    #projectItemModal .modal-content .project-item__main .white-list-search .list-search-results .item {
+    .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .list-search-results .item {
       color: var(--purple-color);
       font-size: 14px;
       font-weight: 400;
       margin-bottom: 10px; }
-      #projectItemModal .modal-content .project-item__main .white-list-search .list-search-results .item i {
+      .project-item-modal-wrapper .modal-content .project-item__main .white-list-search .list-search-results .item i {
         margin-right: 10px;
         font-size: 16px; }
-  #projectItemModal .modal-content .project-item__main .solona-total {
+  .project-item-modal-wrapper .modal-content .project-item__main .solona-total {
     background: #999EE01A;
     border: 2px solid #999EE01A;
     padding: 10px 15px;
@@ -1074,7 +1109,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     border-radius: 4px; }
-    #projectItemModal .modal-content .project-item__main .solona-total .form-control {
+    .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control {
       background: none;
       border: none;
       -webkit-box-shadow: none;
@@ -1084,23 +1119,23 @@ body {
       font-weight: 700;
       color: var(--yellow-color);
       text-align: right; }
-      #projectItemModal .modal-content .project-item__main .solona-total .form-control::-webkit-input-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control::-webkit-input-placeholder {
         color: var(--yellow-color); }
-      #projectItemModal .modal-content .project-item__main .solona-total .form-control::-moz-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control::-moz-placeholder {
         color: var(--yellow-color); }
-      #projectItemModal .modal-content .project-item__main .solona-total .form-control::-ms-input-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control::-ms-input-placeholder {
         color: var(--yellow-color); }
-      #projectItemModal .modal-content .project-item__main .solona-total .form-control::placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control::placeholder {
         color: var(--yellow-color); }
-      #projectItemModal .modal-content .project-item__main .solona-total .form-control:focus::-webkit-input-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control:focus::-webkit-input-placeholder {
         color: transparent; }
-      #projectItemModal .modal-content .project-item__main .solona-total .form-control:focus::-moz-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control:focus::-moz-placeholder {
         color: transparent; }
-      #projectItemModal .modal-content .project-item__main .solona-total .form-control:focus::-ms-input-placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control:focus::-ms-input-placeholder {
         color: transparent; }
-      #projectItemModal .modal-content .project-item__main .solona-total .form-control:focus::placeholder {
+      .project-item-modal-wrapper .modal-content .project-item__main .solona-total .form-control:focus::placeholder {
         color: transparent; }
-  #projectItemModal .modal-content .project-item__main .btn-buy-now {
+  .project-item-modal-wrapper .modal-content .project-item__main .btn-buy-now {
     background: #999EE01A;
     border: 2px solid #999EE01A;
     display: -webkit-box;
@@ -1119,5 +1154,22 @@ body {
     font-weight: 700;
     font-size: 16px;
     margin-left: auto; }
-    #projectItemModal .modal-content .project-item__main .btn-buy-now:hover {
+    .project-item-modal-wrapper .modal-content .project-item__main .btn-buy-now:hover {
       color: var(--white-color); }
+  .project-item-modal-wrapper .modal-content .project-item__main .end-total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px; }
+    .project-item-modal-wrapper .modal-content .project-item__main .end-total .label {
+      color: var(--white-color);
+      font-size: 16px;
+      font-weight: 600; }
+    .project-item-modal-wrapper .modal-content .project-item__main .end-total .value {
+      color: var(--yellow-color);
+      font-weight: 600;
+      font-size: 18px; }
