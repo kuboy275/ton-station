@@ -157,7 +157,7 @@ html {
   font-family: "Poppins", sans-serif; }
 
 header {
-  background: var(--black-color); }
+  background: #040408; }
   header .navbar {
     padding: 30px 0; }
     @media only screen and (max-width: 1200px) {
@@ -244,7 +244,7 @@ header {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 100px; }
+    margin-bottom: 130px; }
     @media only screen and (max-width: 991px) {
       .footer-left-nav {
         margin-bottom: 50px; } }
@@ -426,6 +426,14 @@ body {
           color: var(--white-color); }
         .home .home-banner__search .input-group .form-control::placeholder {
           color: var(--white-color); }
+        .home .home-banner__search .input-group .form-control:focus::-webkit-input-placeholder {
+          color: transparent; }
+        .home .home-banner__search .input-group .form-control:focus::-moz-placeholder {
+          color: transparent; }
+        .home .home-banner__search .input-group .form-control:focus::-ms-input-placeholder {
+          color: transparent; }
+        .home .home-banner__search .input-group .form-control:focus::placeholder {
+          color: transparent; }
       .home .home-banner__search .input-group-text {
         border: none;
         background: inherit;
@@ -496,6 +504,14 @@ body {
           color: var(--white-color); }
         .home .home-project__top .filter .input-group .form-control::placeholder {
           color: var(--white-color); }
+        .home .home-project__top .filter .input-group .form-control:focus::-webkit-input-placeholder {
+          color: transparent; }
+        .home .home-project__top .filter .input-group .form-control:focus::-moz-placeholder {
+          color: transparent; }
+        .home .home-project__top .filter .input-group .form-control:focus::-ms-input-placeholder {
+          color: transparent; }
+        .home .home-project__top .filter .input-group .form-control:focus::placeholder {
+          color: transparent; }
       .home .home-project__top .filter .input-group-text {
         border: none;
         background: inherit;
@@ -564,6 +580,9 @@ body {
       width: 100px;
       background: #999EE01A;
       border: 2px solid #999EE01A; }
+      @media only screen and (max-width: 575px) {
+        .home .home-project__list .project-item__header .logo {
+          width: 85px; } }
     .home .home-project__list .project-item__header .content-header {
       width: 100%; }
       .home .home-project__list .project-item__header .content-header__title {
@@ -587,7 +606,9 @@ body {
             color: var(--yellow-color);
             text-decoration: underline; }
       .home .home-project__list .project-item__header .content-header__tag {
-        gap: 5px; }
+        gap: 5px;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
         .home .home-project__list .project-item__header .content-header__tag span {
           border-radius: 4px;
           padding: 5px 8px;
@@ -768,6 +789,9 @@ body {
       color: var(--yellow-color); }
   #projectItemModal .modal-content .project-item__header .logo {
     width: 120px; }
+    @media only screen and (max-width: 575px) {
+      #projectItemModal .modal-content .project-item__header .logo {
+        width: 100px; } }
   #projectItemModal .modal-content .content-header__title {
     margin: 0;
     font-size: 24px;
@@ -875,6 +899,7 @@ body {
       gap: 20px;
       padding: 15px;
       width: 100%;
+      border-radius: 4px;
       background: #999EE01A;
       border: 2px solid #999EE01A; }
       #projectItemModal .modal-content .project-item__main .liquid-item .title {
@@ -895,8 +920,19 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     gap: 20px;
+    position: relative;
+    border-radius: 4px;
     background: #999EE01A;
     border: 2px solid #999EE01A; }
+    #projectItemModal .modal-content .project-item__main .time-icon {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #projectItemModal .modal-content .project-item__main .time-icon-left {
+        left: 0; }
+      #projectItemModal .modal-content .project-item__main .time-icon-right {
+        right: 0; }
     #projectItemModal .modal-content .project-item__main .time .time-item-dot {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -964,7 +1000,8 @@ body {
     background: #999EE01A;
     border: 2px solid #999EE01A;
     padding: 5px 10px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    border-radius: 4px; }
     #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control {
       background: none;
       border: none;
@@ -983,6 +1020,14 @@ body {
         color: var(--white-color); }
       #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control::placeholder {
         color: var(--white-color); }
+      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-webkit-input-placeholder {
+        color: transparent; }
+      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-moz-placeholder {
+        color: transparent; }
+      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control:focus::-ms-input-placeholder {
+        color: transparent; }
+      #projectItemModal .modal-content .project-item__main .white-list-search .input-group .form-control:focus::placeholder {
+        color: transparent; }
     #projectItemModal .modal-content .project-item__main .white-list-search .input-group-text {
       border: none;
       background: inherit;
@@ -1013,7 +1058,7 @@ body {
   #projectItemModal .modal-content .project-item__main .solona-total {
     background: #999EE01A;
     border: 2px solid #999EE01A;
-    padding: 15px;
+    padding: 10px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1025,11 +1070,34 @@ body {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 10px; }
-    #projectItemModal .modal-content .project-item__main .solona-total .value {
+    gap: 10px;
+    border-radius: 4px; }
+    #projectItemModal .modal-content .project-item__main .solona-total .form-control {
+      background: none;
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline: none;
       font-size: 16px;
       font-weight: 700;
-      color: var(--yellow-color); }
+      color: var(--yellow-color);
+      text-align: right; }
+      #projectItemModal .modal-content .project-item__main .solona-total .form-control::-webkit-input-placeholder {
+        color: var(--yellow-color); }
+      #projectItemModal .modal-content .project-item__main .solona-total .form-control::-moz-placeholder {
+        color: var(--yellow-color); }
+      #projectItemModal .modal-content .project-item__main .solona-total .form-control::-ms-input-placeholder {
+        color: var(--yellow-color); }
+      #projectItemModal .modal-content .project-item__main .solona-total .form-control::placeholder {
+        color: var(--yellow-color); }
+      #projectItemModal .modal-content .project-item__main .solona-total .form-control:focus::-webkit-input-placeholder {
+        color: transparent; }
+      #projectItemModal .modal-content .project-item__main .solona-total .form-control:focus::-moz-placeholder {
+        color: transparent; }
+      #projectItemModal .modal-content .project-item__main .solona-total .form-control:focus::-ms-input-placeholder {
+        color: transparent; }
+      #projectItemModal .modal-content .project-item__main .solona-total .form-control:focus::placeholder {
+        color: transparent; }
   #projectItemModal .modal-content .project-item__main .btn-buy-now {
     background: #999EE01A;
     border: 2px solid #999EE01A;
